@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="a">
+    <form>
+
+    <div >
+        <label for="name">NAME :</label>
+        <input type="text" id="name">
+    </div>
+
+    <div>
+        <label for="">DEPARTMENT :</label>
+        <select name="dprt" id="dprt">
+            <option value="">~Select~</option>
+            <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                  <option value="AI&DS">AI&DS</option>
+        </select>
+    </div>
+
+ 
+    <div>
+        <label for="email">E-MAIL :</label>
+        <input type="email" id="email">
+    </div>
+
+    <div>
+        <label for="travel">TRAVEL :</label> <br>
+        <label><input type="radio" value="Dayscholler" name="travel" id="travel">Dayscholler</label>
+        <br>
+         <label><input type="radio" value="Hosteller" name="travel" id="travel">Hosteller</label>
+        
+    </div>
+    <div class="check" >
+        <Label >COURSES :</Label>
+        <br>
+        <label for=""><input id="course" value="java" type="checkbox" name="JAVA">JAVA</label><br>
+        <label for=""><input id="course" value="python" type="checkbox" name="PYTHON">PYTHON</label><br>
+        <label for=""><input id="course" value="Fullstack" type="checkbox" name="Fullstack" >FULL STACK</label> <br>
+        <label for=""><input id="course" value="c++" type="checkbox" name="C++" >C++</label>
+    </div>
+
+    <div class="btn">
+        <button type="button" onclick="btn()">SUBMIT</button>
+
+    </div>
+
+
+
+    </form>
+</div>
+
+<script>
+    function btn(){
+        let name=document.getElementById("name").value;
+        console.log(name);
+
+        let dprt=document.getElementById("dprt").value;
+        console.log(dprt);
+         let email=document.getElementById("email").value;
+        console.log(email);
+
+        let travel=document.getElementById("travel").value;
+        console.log(travel);
+
+         let course=document.getElementById("course").value;
+        console.log(course);
+
+        //  console.log(document.getElementById("name").value)
+        //     console.log(document.getElementById("dprt").value)
+        //     console.log(document.getElementById("email").value)
+        //     console.log(document.getElementById("travel").value)
+        //     console.log(document.getElementById("course").value)
+
+
+       
+
+
+        
+        
+    }
+</script>
+</body>
+</html>
